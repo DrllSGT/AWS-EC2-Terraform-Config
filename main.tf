@@ -1,7 +1,9 @@
+# Define variable for Test IP address
 variable "test_ip_address" {
   type = string
 }
 
+# Define provider
 provider "aws" {
   region = "us-west-2"
 }
@@ -14,6 +16,7 @@ resource "aws_vpc" "test_vpc" {
   }
 }
 
+# Create internet gateway
 resource "aws_internet_gateway" "test_igw" {
   vpc_id = aws_vpc.test_vpc.id
 
@@ -22,6 +25,7 @@ resource "aws_internet_gateway" "test_igw" {
   }
 }
 
+# Create subnet
 resource "aws_subnet" "test_subnet" {
   vpc_id     = aws_vpc.test_vpc.id
   cidr_block = "10.0.1.0/22"
@@ -31,6 +35,7 @@ resource "aws_subnet" "test_subnet" {
   }
 }
 
+# Create security group
 resource "aws_security_group" "test_sg" {
   name        = "test_sg"
   vpc_id      = aws_vpc.test_vpc.id
@@ -50,6 +55,7 @@ resource "aws_security_group" "test_sg" {
   }
 }
 
+# Launch EC2 instance
 resource "aws_instance" "test_instance" {
   ami           = "ami-0c44b239cbfafe2f9" 
   instance_type = "t3.small"
