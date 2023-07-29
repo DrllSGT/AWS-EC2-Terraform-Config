@@ -26,3 +26,5 @@ As a DevSecOps engineer, I was tasked with creating a Terraform configuration fi
 
 Found this to be useful:
 https://registry.terraform.io/providers/hashicorp/aws/latest/docs
+
+The main.tf file I created defines a VPC, subnet, internet gateway, security group, and EC2 instance as specified in the requirements. The security group allows SSH ingress from the provided IP address variable.
