@@ -24,3 +24,5 @@ As a DevSecOps engineer and I was tasked with creating a Terraform configuration
     subnet_id - aws_subnet.test_subnet.id
     vpc_security_group_ids = [aws_security_group.test_sg.id ]
 
+Found this to be useful:
+https://registry.terraform.io/providers/hashicorp/aws/latest/docs
