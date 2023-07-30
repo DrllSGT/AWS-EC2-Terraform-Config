@@ -1,4 +1,4 @@
-# ![My Skills](https://skillicons.dev/icons?i=aws,vscode,git,github) <img src ="https://github.com/DrllSGT/AWS-EC2-Terraform-Config/assets/52445175/b7a23d9f-6dc9-4957-be75-fd8c4cb4fd8d" width=40>
+# ![My Skills](https://skillicons.dev/icons?i=aws,vscode,git,github) <img src ="https://github.com/DrllSGT/AWS-EC2-Terraform-Config/assets/52445175/0589c912-b092-4e72-b4ed-b1c2f0626761" width=48>
 # AWS EC2 Terraform Configuration File 
 
 
@@ -28,3 +28,4 @@ Found this to be useful:
 https://registry.terraform.io/providers/hashicorp/aws/latest/docs
 
 The main.tf file I created defines a VPC, subnet, internet gateway, security group, and EC2 instance as specified in the requirements. The security group allows SSH ingress from the provided IP address variable.
+
