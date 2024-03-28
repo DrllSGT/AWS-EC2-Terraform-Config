@@ -6,7 +6,7 @@
 Tasked with creating a Terraform configuration file for deploying an Amazon Elastic Compute Cloud (EC2) instance in AWS. The EC2 instance should be launched in a VPC with a single subnet and an internet gateway should be attached to the VPC to allow internet access. The EC2 instance should use an existing Amazon Machine Image (AMI) and should have a security group that allows SSH access from my IP address. I created a Terraform file that satisfies the below requirements:
 
 1. Define variable in main.tf for your IP Address. Name of the variable should be "test_ip_address"
-2. Region should be "us-west-2"
+2. Remember to edit your Region in the main.tf file, I've used "eu-west-2"
 3. VPC name should be "test_vpc" and CIDR block should be "10.0.0.0/16"
 4. Internet Gateway name should be "test_igw"
 5. Subnet name should be "test_subnet" and CIDR block should be "10.0.1.0/22"
