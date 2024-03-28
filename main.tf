@@ -5,7 +5,7 @@ variable "test_ip_address" {
 
 # Define provider
 provider "aws" {
-  region = "us-west-2"
+  region = "eu-west-2"
 }
 
 resource "aws_vpc" "test_vpc" {
